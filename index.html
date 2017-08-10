@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>LuSabores</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="LuSabores, Lu Sabores,comida, restaurante, guarulhos encomenda, trufas, bolos, salgados, Guarulhos comida">
+<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="icon" href="img/icone.png" size="64x64"/>
+
+
+
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+</head>
+<body>
+	<div class="menu">
+				<a href="index.html"><img class="sitee" src="logobranco.png" /></a>
+		<ul class="topnav" id="myTopnav">
+				<li class="yessim"><a href="Encomendas.html">Encomende</a></li>
+				<li><a href="Bolos.html">Bolos</a></li>
+				<li class="yessim"><a href="Tortas.html">Tortas</a></li>
+				<li><a href="Salgados.html">Salgados</a></li>
+				<li class="yessim"><a href="Doces.html">Doces</a></li>
+				<li><a href="Faleconosco.html">Fale conosco</a></li>
+				<li class="icon">
+				<a href="javascript:void(0);" style="font-size:35px;" onclick="myFunction()">☰</a>
+				</li>
+			</ul>
+	</div>
+	<div class="sequencia">
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <img src="bol.jpg" style="width:100%">
+		  <div class="text">Os melhores bolos para o melhor aniversário que existe: O seu. </div>
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="coxinh.jpg" style="width:100%">
+		  <div class="text">Aqui você encontra o rei dos salgados para reinar no seu estomago. </div>
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="brigadeir.jpg" style="width:100%">
+		  <div class="text">O Campeão brasileiro dos doces está aqui pra mostrar o motivo de ser tão badalado.</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+
+		<div class="dot-class" style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	</div>
+	<section>
+		<div class="restante">
+					<div class="container-dica">
+						<div class="box">
+							<img class="image-box" src="kitkat.jpg">
+							<p class="dica">Dica do mês: <br>Bolo de KitKat</p>
+						</div>
+						<div class="box-anuncio"><hr>
+							<p class="anuncio-p">Como destaque para esse mês, o bolo de Kit Kat recheado com M&M's demonstra como uma combinação na medida consegue despertar um incrivel sabor. <a href="Encomendas.html">Clique aqui</a> e conheça nossas formas para encomendar.<br></p> 
+						</div>
+					</div>
+						
+							<a href="Bolos.html"><div class="box1 bordas">
+							<img class="img" src="bol.jpg">
+							<div class="center"><h2>Bolos</h2></div>
+							</div></a>	
+							<div class="texto-celular cel1">BOLOS</div>
+							
+						
+						
+						<a href="Tortas.html"><div class="box2 bordas">
+						<img class="img" src="imagem4.jpg">
+						<div class="center center-box2"><h2>Tortas</h2></div>
+						</div></a>
+						<div class="texto-celular cel2">TORTAS</div>
+						
+						<a href="Salgados.html"><div class="box3 bordas">
+						<img class="img" src="imagem22.jpg">
+						<div class="center center-box3"><h2>Salgados</h2></div>
+						</div></a>
+						<div class="texto-celular cel3">SALGADOS</div>
+						
+						<a href="Doces.html"><div class="box4 bordas">
+						<img class="img" src="imagem33.jpg">
+						<div class="center center-box4"><h2>Doces</h2></div>
+						</div></a>
+						<div class="texto-celular cel4">DOCES</div>
+					</div>
+			
+			
+	</section>
+	
+<script> //automatico carrossel
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  //alert('showslides('+ n +')\nslideIndex='+slideIndex);
+  
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n==undefined){n = ++slideIndex} //automatico
+  if (n > slides.length) {slideIndex = 1} //faz nao ter fim
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; //sumir as imagens que nao estao em evidencias
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");//mostrar o botão e sumir quando nao esta selecionado
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  
+  
+}
+
+  setInterval(showSlides, 4000);
+
+
+</script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+		}
+}
+</script>
+	<div class="rodape">
+		<div class="rede-social"><a href="https://www.facebook.com/lusaboresoficial"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></div>
+		<div class="inside-rodape">
+			<h4>|<a href="index.html"> Inicio </a>|
+			<a href="Encomendas.html">Encomende </a>|
+			<a href="Bolos.html">Bolos </a>|
+			<a href="Tortas.html">Tortas </a>|
+			<a href="Salgados.html">Salgados </a>|
+			<a href="Doces.html">Doces </a>|
+			<a href="Faleconosco.html">Fale conosco </a>|</h4>
+		</div>
+		<div class="direitos">LuSabores © 2016. Todos os direitos reservados.</div>
+		<div class="criador">Desenvolvido por <a href="http://magnoalves.esy.es/">Magno Alves</a></div>
+	</div>
+
+</body>
+</html> 
